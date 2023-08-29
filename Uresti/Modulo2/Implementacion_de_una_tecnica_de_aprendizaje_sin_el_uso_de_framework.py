@@ -28,7 +28,7 @@
 
 # -------------------------------------------------------------------------------------------------
 # |                                                                                               |
-# | Descripción del Programa:                                                                     |
+# | Descripción del Programa:                                                                   |
 # |                                                                                               |
 # -------------------------------------------------------------------------------------------------
 
@@ -36,76 +36,85 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-# Read the CSV file into a DataFrame
-df = pd.read_csv("HousingData.csv")
-
 class KMeansClustering:
     def __init__(self, k=3):
         self.k = k
         self.centroids = None
 
     @staticmethod
-    def distance(data_point, centroids):
-        return np.sqrt(np.sum((centroids - data_point) ** 2, axis=1))
+    def distancia(punto_datos, centroides):
+        return np.sqrt(np.sum((centroides - punto_datos) ** 2, axis=1))
 
-    def fit(self, X, max_iterations=100):
-        y = np.zeros(X.shape[0], dtype=int)  # Initialize labels
+    def ajustar(self, X, max_iteraciones=100):
+        y = np.zeros(X.shape[0], dtype=int)  # Inicializar etiquetas
         
-        # Manual normalization
-        X_normalized = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
+        # Normalización manual
+        X_normalizado = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
         
-        self.centroids = np.random.uniform(0, 1, (self.k, X_normalized.shape[1]))
+        self.centroids = np.random.uniform(0, 1, (self.k, X_normalizado.shape[1]))
 
-        for _ in range(max_iterations):
-            prev_centroids = np.copy(self.centroids)
+        for _ in range(max_iteraciones):
+            centroides_previos = np.copy(self.centroids)
             y = []
 
-            for data_point in X_normalized:
-                distances = KMeansClustering.distance(data_point, self.centroids)
-                cluster_number = np.argmin(distances)
-                y.append(cluster_number)
+            for punto_datos in X_normalizado:
+                distancias = KMeansClustering.distancia(punto_datos, self.centroids)
+                numero_cluster = np.argmin(distancias)
+                y.append(numero_cluster)
 
             y = np.array(y)
 
-            cluster_indices = []
+            indices_clusters = []
 
             for i in range(self.k):
-                cluster_indices.append(np.argwhere(y == i))
+                indices_clusters.append(np.argwhere(y == i))
 
-            cluster_centers = []
+            centroides_clusters = []
 
-            for i, indices in enumerate(cluster_indices):
+            for i, indices in enumerate(indices_clusters):
                 if len(indices) == 0:
-                    cluster_centers.append(self.centroids[i])
+                    centroides_clusters.append(self.centroids[i])
                 else:
-                    cluster_centers.append(np.mean(X_normalized[indices], axis=0)[0])
+                    centroides_clusters.append(np.mean(X_normalizado[indices], axis=0)[0])
 
-            self.centroids = np.array(cluster_centers)
+            self.centroids = np.array(centroides_clusters)
 
-            if np.max(np.abs(prev_centroids - self.centroids)) < 0.0001:
+            if np.max(np.abs(centroides_previos - self.centroids)) < 0.0001:
                 break
         
         return y
 
-# List of column names for features
-data_columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
+df = pd.read_csv('/Users/sergiogonzalez/Documents/GitHub/IA-TEC/Uresti/Modulo2/spotify-2023.csv', encoding='ISO-8859-1')
 
-# Extract relevant columns from the DataFrame
-X = df[data_columns].values
+# Lista de nombres de columna para características
+columnas_datos = ['bpm', 'danceability_%', 'valence_%', 'energy_%', 'acousticness_%', 
+                   'instrumentalness_%', 'liveness_%', 'speechiness_%']
 
-# K-Means clustering
-kmeans = KMeansClustering(k=3)
-labels = kmeans.fit(X)
+# Extraer columnas relevantes del DataFrame
+X = df[columnas_datos].values
 
-# Print cluster assignments for each data point
-for i, label in enumerate(labels):
-    print(f"Data point {i}: Cluster {label}")
+# Transformar columnas en valores numéricos
+for col in columnas_datos:
+    unique_values = np.unique(X[:, columnas_datos.index(col)])
+    mapping = {val: i for i, val in enumerate(unique_values)}
+    X[:, columnas_datos.index(col)] = [mapping[val] for val in X[:, columnas_datos.index(col)]]
 
-# Print final cluster centroids
-print("Final Cluster Centroids:")
+# Agrupamiento K-Means
+kmeans = KMeansClustering(k=5)
+etiquetas = kmeans.ajustar(X)
+
+# Imprimir asignaciones de clusters para cada punto de datos
+for i, etiqueta in enumerate(etiquetas):
+    print(f"Punto de datos {i}: Cluster {etiqueta}")
+
+# Imprimir centroides finales de los clusters
+print("Centroides Finales de los Clusters:")
 print(kmeans.centroids)
 
-# Visualization
-plt.scatter(X[:, 0], X[:, 1], c=labels)
-plt.scatter(kmeans.centroids[:, 0], kmeans.centroids[:, 1], c="red", marker="x")
+# Visualización
+plt.figure(figsize=(10, 6))
+plt.scatter(X[:, 0], X[:, 1], c=etiquetas, cmap='viridis', alpha=0.4, s=20)
+plt.scatter(kmeans.centroids[:, 0], kmeans.centroids[:, 1], c="red", marker="x", s=100)
+plt.title('Agrupamiento K-Means')
+plt.colorbar(label='Cluster')
 plt.show()
