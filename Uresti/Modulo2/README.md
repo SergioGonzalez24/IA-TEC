@@ -5,7 +5,7 @@ Este repositorio contiene dos versiones de un código de clustering implementado
 ## Versiones del Código
 
 - [Versión 1 (Original)](<a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2/Modelo_version_1.py>Version 1</a>): Esta es la versión original del código de clustering K-Means.
-- [Versión 2 (Mejorada)](Modelo_version_2.py): La versión 2 es una mejora de la versión 1, con modificaciones para cumplir con reglas y requisitos específicos.
+- [Versión 2 (Mejorada)](<a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2/Modelo_version_2.py>Version 1</a>): La versión 2 es una mejora de la versión 1, con modificaciones para cumplir con reglas y requisitos específicos.
 
 ## Porcentaje de Similitud
 
