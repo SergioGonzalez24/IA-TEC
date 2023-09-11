@@ -2,7 +2,9 @@
 # |                                                                                               |
 # | Título: Implementación de un modelo de clasificación utilizando Scikit-Learn                  |
 # | Implementación de un modelo de clasificación utilizando Scikit-Learn                          |
+# | Autor: Sergio Gonzalez                                                                        |
 # | Fecha: 11/09/2023                                                                             |
+# | Notas: Documentación generada con la ayuda de la herramienta Mintlify Doc Writer.             |
 # |                                                                                               |
 # -------------------------------------------------------------------------------------------------
 
