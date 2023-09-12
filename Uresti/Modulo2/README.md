@@ -4,8 +4,8 @@ Este repositorio contiene dos versiones de un código de clustering implementado
 
 ## Versiones del Código
 
-- [Versión 1 (Original)](version1.py): Esta es la versión original del código de clustering K-Means.
-- [Versión 2 (Mejorada)](version2.py): La versión 2 es una mejora de la versión 1, con modificaciones para cumplir con reglas y requisitos específicos.
+- [Versión 1 (Original)](<a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2/Modelo_version_1.py>Version 1</a>): Esta es la versión original del código de clustering K-Means.
+- [Versión 2 (Mejorada)](<a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2/Modelo_version_2.py>Version 1</a>): La versión 2 es una mejora de la versión 1, con modificaciones para cumplir con reglas y requisitos específicos.
 
 ## Porcentaje de Similitud
 
@@ -17,7 +17,7 @@ El código utiliza un conjunto de datos de Spotify (nombre del archivo: `spotify
 
 ## Notebook de Prueba
 
-- [Notebook de Prueba](test_notebook.ipynb): Este notebook de Jupyter proporciona un entorno para probar y evaluar el rendimiento del código de clustering K-Means en el conjunto de datos de Spotify. Puedes utilizarlo para experimentar con diferentes parámetros y visualizar los resultados.
+- [Notebook de Prueba](test.ipynb): Este notebook de Jupyter proporciona un entorno para probar y evaluar el rendimiento del código de clustering K-Means en el conjunto de datos de Spotify. Puedes utilizarlo para experimentar con diferentes parámetros y visualizar los resultados.
 
 ## Reglas del Código
 
