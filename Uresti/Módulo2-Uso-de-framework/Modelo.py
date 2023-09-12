@@ -44,7 +44,7 @@ import seaborn as sns
 
 # La línea `data = pd.read_csv("hotel_bookings_completo.csv")` lee un archivo CSV llamado
 # "hotel_bookings_completo.csv" y almacena su contenido en un DataFrame de pandas llamado `data`.
-data = pd.read_csv("Módulo2-Uso-de-framework/hotel_bookings_completo.csv")
+data = pd.read_csv("./Módulo2-Uso-de-framework/hotel_bookings_completo.csv")
 
 # El código realiza codificación one-hot en variables categóricas en el DataFrame `data` usando la
 # función `pd.get_dummies()`. Esto convierte variables categóricas en columnas binarias, donde cada
