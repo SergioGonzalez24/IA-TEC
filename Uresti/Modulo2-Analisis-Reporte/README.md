@@ -16,23 +16,23 @@ El dataset utilizado en este análisis fue seleccionado por su idoneidad para ev
 
 Para evaluar el modelo, se dividió el dataset en tres conjuntos: entrenamiento, prueba y validación. Esto se hizo para evaluar el modelo en diferentes etapas de su desarrollo y garantizar que generalice bien a datos no vistos previamente.
 
-El proceso de separación se detalla en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico, donde se incluyen gráficas que muestran cómo se realizó la división de los conjuntos.
+El proceso de separación se detalla en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico</a>, donde se incluyen gráficas que muestran cómo se realizó la división de los conjuntos.
 
 ## Diagnóstico del Grado de Bias o Sesgo
 
-Se realizó un análisis exhaustivo del grado de sesgo del modelo. Esto se documenta en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico junto con gráficas comparativas del aprendizaje del conjunto de entrenamiento, prueba y validación.
+Se realizó un análisis exhaustivo del grado de sesgo del modelo. Esto se documenta en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico</a> junto con gráficas comparativas del aprendizaje del conjunto de entrenamiento, prueba y validación.
 
 ## Diagnóstico del Grado de Varianza
 
-Se evaluó el grado de varianza del modelo, también documentado en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico con gráficas comparativas del aprendizaje de los conjuntos mencionados anteriormente.
+Se evaluó el grado de varianza del modelo, también documentado en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico</a> con gráficas comparativas del aprendizaje de los conjuntos mencionados anteriormente.
 
 ## Diagnóstico del Nivel de Ajuste del Modelo
 
-El análisis incluye una evaluación del nivel de ajuste del modelo, identificando si es un caso de underfitting, overfitting o un ajuste adecuado. Esto se respalda con gráficas comparativas en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico.
+El análisis incluye una evaluación del nivel de ajuste del modelo, identificando si es un caso de underfitting, overfitting o un ajuste adecuado. Esto se respalda con gráficas comparativas en el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico.</a>
 
 ## Uso de Técnicas de Regularización
 
-Se aplicaron técnicas de regularización para mejorar el desempeño del modelo. En el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico, se explican claramente estas técnicas y se muestran comparativos antes y después de su aplicación.
+Se aplicaron técnicas de regularización para mejorar el desempeño del modelo. En el <a href=https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Informe_Tecnico_2.ipynb>Reporte Técnico</a>, se explican claramente estas técnicas y se muestran comparativos antes y después de su aplicación.
 
 ## Entrega Profesional del Reporte
 
