@@ -5,7 +5,7 @@ Este repositorio contiene el análisis y reporte sobre el desempeño de un model
 
 ## Archivos
 
-1. **Reporte Escrito:** [Enlace al Reporte Escrito](reporte_escrito.pdf)
+1. **Reporte Escrito:** [https://github.com/SergioGonzalez24/IA-TEC/blob/main/Uresti/Modulo2-Analisis-Reporte/Reporte.pdf](reporte_escrito.pdf)
 2. **Reporte Técnico (Jupyter Notebook):** [Enlace al Reporte Técnico](reporte_tecnico.ipynb)
 
 ## Justificación de la Selección del Dataset
