@@ -1,3 +1,4 @@
+
 # Análisis y Reporte sobre el Desempeño del Modelo
 
 Este repositorio contiene el análisis y reporte sobre el desempeño de un modelo de aprendizaje automático implementado en el contexto de la subcompetencia SMA0104A. El análisis se basa en la evaluación de un modelo utilizando un conjunto de prueba y un conjunto de validación, así como en la aplicación de técnicas de regularización para mejorar su rendimiento.
