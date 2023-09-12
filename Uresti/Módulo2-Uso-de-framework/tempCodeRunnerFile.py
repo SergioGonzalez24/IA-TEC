@@ -1,5 +1,37 @@
+# -------------------------------------------------------------------------------------------------
+# |                                                                                               |
+# | Título: Implementación de un modelo de clasificación utilizando Scikit-Learn                  |
+# | Implementación de un modelo de clasificación utilizando Scikit-Learn                          |
+# | Fecha: 11/09/2023                                                                             |
+# |                                                                                               |
+# -------------------------------------------------------------------------------------------------
 
-## TEST ##
+# -------------------------------------------------------------------------------------------------
+# |                                                                                               |
+# | Instrucciones para el desarrollo del programa:                                                |
+# |                                                                                               |
+# | Este programa implementa un modelo de clasificación utilizando Scikit-Learn, una biblioteca   |
+# | de aprendizaje automático de Python. El modelo se entrena y evalúa en un conjunto de datos    |
+# | que se divide en conjuntos de entrenamiento, validación y prueba. Se utilizan métricas de     |
+# | evaluación como precisión, recall y F1-score, y se muestra una matriz de confusión como       |
+# | representación gráfica.                                                                       |
+# |                                                                                               |
+# | Asegúrate de tener Scikit-Learn, Pandas y Matplotlib instalados en tu entorno de Python       |
+# | antes de ejecutar este programa.                                                              |
+# |                                                                                               |
+# -------------------------------------------------------------------------------------------------
+# |                                                                                               |
+# | Instrucciones para la ejecución del programa:                                                 |
+# |                                                                                               |
+# | 1. Reemplaza "hotel_bookings_completo.csv" con la ruta de tu propio conjunto de datos en      |
+# |    formato CSV.                                                                               |
+# | 2. Ajusta los hiperparámetros del modelo RandomForestClassifier según sea necesario.          |
+# | 3. Ejecuta el programa y observa las métricas de evaluación y la matriz de confusión en la    |
+# |    consola y la representación gráfica.                                                       |
+# |                                                                                               |
+# -------------------------------------------------------------------------------------------------
+
+
 
 # El código importa las bibliotecas y módulos necesarios para realizar tareas de aprendizaje
 # automático.
@@ -12,7 +44,7 @@ import seaborn as sns
 
 # La línea `data = pd.read_csv("hotel_bookings_completo.csv")` lee un archivo CSV llamado
 # "hotel_bookings_completo.csv" y almacena su contenido en un DataFrame de pandas llamado `data`.
-data = pd.read_csv("hotel_bookings_completo.csv")
+data = pd.read_csv("Módulo2-Uso-de-framework/hotel_bookings_completo.csv")
 
 # El código realiza codificación one-hot en variables categóricas en el DataFrame `data` usando la
 # función `pd.get_dummies()`. Esto convierte variables categóricas en columnas binarias, donde cada
