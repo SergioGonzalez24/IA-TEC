@@ -1,0 +1,1 @@
+ol = language_tool_python.LanguageToolPublicAPI('es')
